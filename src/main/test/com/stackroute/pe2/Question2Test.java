@@ -8,6 +8,8 @@ import static org.junit.Assert.*;
 
 public class Question2Test {
 
+
+    //Instantiated the class
     Question2 ob;
 
     @Before
@@ -19,6 +21,8 @@ public class Question2Test {
     public void tearDown() throws Exception {
         ob=null;
     }
+
+    //Test cases where the entered number are power of the 4
     @Test
     public void powertest1() {
         String result = ob.checkPower(16);
@@ -34,6 +38,9 @@ public class Question2Test {
         String result = ob.checkPower(256);
         assertEquals("Yes", result);
     }
+
+
+    //Test cases where the entered number is not the power of 4
     @Test
     public void notPowertest1() {
         String result = ob.checkPower(19);

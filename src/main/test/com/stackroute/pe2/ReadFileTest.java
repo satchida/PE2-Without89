@@ -9,6 +9,8 @@ import java.io.IOException;
 import static org.junit.Assert.*;
 
 public class ReadFileTest {
+
+    //Class is instantiated and object is created
     ReadFile ob;
 
     @Before
@@ -21,10 +23,11 @@ public class ReadFileTest {
         ob=null;
     }
 
+//Test case for the file stored in same directory
     @Test
     public void readFileFromDirectory() throws IOException {
         String result=ob.readFile("/home/satchida/Desktop/File1");
-        assertEquals("ABCDEFG\nTHE LENGTH IS 8",result);
+        assertEquals("ABCDEFGOIAISFDUSIJDXFSYUIXIGISXHSHKXSHKHS\nTHE LENGTH IS 42",result);
 
 
     }

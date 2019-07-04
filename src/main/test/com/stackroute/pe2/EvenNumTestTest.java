@@ -8,6 +8,8 @@ import static org.junit.Assert.*;
 
 public class EvenNumTestTest {
 
+
+    //Instanciating the class
     EvenNumTest ob;
 
     @Before
@@ -19,6 +21,8 @@ public class EvenNumTestTest {
     public void tearDown() throws Exception {
         ob = null;
     }
+
+    //Test Cases when the user eneters even numbers
     @Test
     public void evenTest1(){
         boolean result=ob.isEven(12);
@@ -34,6 +38,8 @@ public class EvenNumTestTest {
         boolean result=ob.isEven(19872);
         assertEquals(true,result);
     }
+
+    //Test cases when the user eneters odd numbers
     @Test
     public void oddTest1(){
         boolean result=ob.isEven(1987);
