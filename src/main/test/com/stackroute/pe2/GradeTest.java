@@ -7,7 +7,7 @@ import org.junit.Test;
 import static org.junit.Assert.*;
 
 public class GradeTest {
-
+    //The class is instantiated
     Grade grade;
 
     @Before
